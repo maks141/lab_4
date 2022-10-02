@@ -15,9 +15,8 @@ for i in range(1, employees + 1):
 
 max_kilometers = sorted(kilometers, reverse=True)
 min_taxi = sorted(taxi)
-
+counter = 0
 for i in kilometers:
-    counter = 0
     index_km = max_kilometers.index(i)
     num_taxi = taxi.index(min_taxi[index_km])
     counter += 1
@@ -28,4 +27,4 @@ for i in range(len(max_kilometers)):
     summ = max_kilometers[i] * min_taxi[i]
     data_sum.append(summ)
 print('Сумма', sum(data_sum))
-print('Сумма', lab_2(sum(data_sum)))
+print(lab_2(sum(data_sum)))
